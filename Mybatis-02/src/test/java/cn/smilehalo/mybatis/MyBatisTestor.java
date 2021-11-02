@@ -1,5 +1,6 @@
 package cn.smilehalo.mybatis;
 
+import cn.smilehalo.entity.Goods;
 import cn.smilehalo.utils.MyBatisUtils;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -10,6 +11,7 @@ import org.junit.Test;
 import java.io.IOException;
 import java.io.Reader;
 import java.sql.Connection;
+import java.util.List;
 
 public class MyBatisTestor {
     @Test
@@ -47,6 +49,24 @@ public class MyBatisTestor {
             sqlSession = MyBatisUtils.openSession();
             Connection connection = sqlSession.getConnection();
             System.out.println(connection);
+        } catch (Exception e) {
+            throw e;
+        } finally {
+            MyBatisUtils.closeSession(sqlSession);
+        }
+    }
+    @Test
+    public void testSelectAll(){
+        SqlSession sqlSession = null;
+        try {
+            sqlSession = MyBatisUtils.openSession();
+            List<Goods> list = sqlSession.selectList("goods.selectAll");
+            for (Goods goods:list
+                 ) {
+                System.out.println(goods.getTitle());
+
+            }
+
         } catch (Exception e) {
             throw e;
         } finally {

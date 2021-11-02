@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6369797c-3b20-4b53-acbb-d9e6a53b97a8" name="Default Changelist" comment="" />
+    <list default="true" id="6369797c-3b20-4b53-acbb-d9e6a53b97a8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mybatis-01/Mybatis-01.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mybatis-02/src/main/java/cn/smilehalo/entity/Goods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mybatis-02/src/main/resources/mappers/goods.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/35023cfd-0e88-4497-a9c7-74d59d3bfd01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/35023cfd-0e88-4497-a9c7-74d59d3bfd01.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-02/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-02/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-02/src/test/java/cn/smilehalo/mybatis/MyBatisTestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-02/src/test/java/cn/smilehalo/mybatis/MyBatisTestor.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +26,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -24,6 +39,7 @@
     </option>
   </component>
   <component name="ProjectId" id="20IjTLpNPxJQUbG3HgPW3cX0sFU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -32,10 +48,12 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$PROJECT_DIR$/../../huanjing/android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Mybatis-01/target/classes/cn/smilehalo/dao" />
+    <property name="database.data.extractors.current.id" value="Comma-separated (CSV)_id" />
+    <property name="last_opened_file_path" value="F:/资料/babytun建库脚本.sql" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -59,7 +77,7 @@
       <command value="mvn idea:module" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MyBatisTestor.testMyBatisUtils">
+  <component name="RunManager" selected="JUnit.MyBatisTestor.testSelectAll">
     <configuration name="MyBatisTestor.testMyBatisUtils" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mybatis-02" />
       <extension name="coverage">
@@ -71,6 +89,22 @@
       <option name="PACKAGE_NAME" value="cn.smilehalo.mybatis" />
       <option name="MAIN_CLASS_NAME" value="cn.smilehalo.mybatis.MyBatisTestor" />
       <option name="METHOD_NAME" value="testMyBatisUtils" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyBatisTestor.testSelectAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mybatis-02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.smilehalo.mybatis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.smilehalo.mybatis" />
+      <option name="MAIN_CLASS_NAME" value="cn.smilehalo.mybatis.MyBatisTestor" />
+      <option name="METHOD_NAME" value="testSelectAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -94,6 +128,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyBatisTestor.testSelectAll" />
         <item itemvalue="JUnit.MyBatisTestor.testMyBatisUtils" />
         <item itemvalue="JUnit.MyBatisTestor.testSqlSessionFactory" />
       </list>
@@ -115,6 +150,8 @@
       <workItem from="1635753278779" duration="1021000" />
       <workItem from="1635755261633" duration="5009000" />
       <workItem from="1635771197186" duration="2704000" />
+      <workItem from="1635773962341" duration="252000" />
+      <workItem from="1635824597275" duration="2976000" />
     </task>
     <servers />
   </component>
@@ -122,52 +159,61 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="94" key="#Project_Structure" timestamp="1635769034245">
+    <state x="440" y="94" key="#Project_Structure" timestamp="1635826284511">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1480" y="94" key="#Project_Structure/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1635739496620" />
-    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635769034245" />
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635826284511" />
     <state x="541" y="223" key="#UserDaoTest_(1)" timestamp="1635750163313">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="541" y="223" key="#UserDaoTest_(1)/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635750163313" />
-    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1635772250959">
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1635825292146">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1368" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1635744854768" />
-    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635772250959" />
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635825292146" />
     <state x="-1240" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1635743375528">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1240" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1635743375528" />
-    <state x="-1155" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1635745044076">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1635826002156">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1155" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1635745044076" />
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635826002156" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1635744863621">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1635744863621" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1635748340073">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1635825099486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635748340073" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1635773920944">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635825099486" />
+    <state x="818" y="417" key="Github.ShareDialog" timestamp="1635774132016">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635773920944" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1635773920943">
+    <state x="818" y="417" key="Github.ShareDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635774132016" />
+    <state x="663" y="216" key="Github.UntrackedFilesDialog" timestamp="1635774173301">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635773920943" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1635773920943">
+    <state x="663" y="216" key="Github.UntrackedFilesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635774173301" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1635827565568">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635773920943" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1635773920944">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635827565568" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1635827565568">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635773920944" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635827565568" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1635827565568">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635827565568" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1635827565568">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635827565568" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1635749737420">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -197,6 +243,10 @@
     </state>
     <state x="-1387" y="197" width="998" height="708" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1635744533032" />
     <state x="320" y="179" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635771694054" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1635774193624">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635774193624" />
     <state x="334" y="180" key="new project wizard" timestamp="1635771217678">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
