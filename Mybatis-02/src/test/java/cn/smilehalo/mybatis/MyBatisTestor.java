@@ -11,7 +11,9 @@ import org.junit.Test;
 import java.io.IOException;
 import java.io.Reader;
 import java.sql.Connection;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class MyBatisTestor {
     @Test
@@ -67,6 +69,39 @@ public class MyBatisTestor {
 
             }
 
+        } catch (Exception e) {
+            throw e;
+        } finally {
+            MyBatisUtils.closeSession(sqlSession);
+        }
+    }
+    @Test
+    public void testSelectById(){
+        SqlSession sqlSession = null;
+        try {
+            sqlSession = MyBatisUtils.openSession();
+            Goods goods = sqlSession.selectOne("goods.selectById", 1603);
+            System.out.println(goods.getTitle());
+        } catch (Exception e) {
+            throw e;
+        } finally {
+            MyBatisUtils.closeSession(sqlSession);
+        }
+    }
+
+    @Test
+    public void testSelectByPriceRange(){
+        SqlSession sqlSession = null;
+        try {
+            sqlSession  = MyBatisUtils.openSession();
+            Map param = new HashMap();
+            param.put("min",100);
+            param.put("max",500);
+            param.put("limit",10);
+            List<Goods> list = sqlSession.selectList("selectByPriceRange", param);
+            for (Goods g:list){
+                System.out.println(g.getTitle()+":"+g.getCurrentPrice());
+            }
         } catch (Exception e) {
             throw e;
         } finally {
