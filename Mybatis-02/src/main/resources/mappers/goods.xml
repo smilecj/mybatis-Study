@@ -24,13 +24,4 @@
   select g.* ,c.category_name from t_goods g,t_category c
   where g.category_id = c.category_id;
   </select>
-
-
-<!--  <select id="selectByPriceRange" parameterType="java.util.Map" resultType="cn.smilehalo.entity.Goods">
-  select*from t_goods
-  where
-  current_price  between  #{min} and #{max}
-  order by current_price
-  limit 0,#{limt};
-  </select>-->
 </mapper>
