@@ -118,6 +118,15 @@ public class MyBatisTestor {
                     list) {
                 System.out.println(map);
             }
+
+            /*List<Goods> list1 = sqlSession.selectList("goods.selectGoodsMap");
+            for (Goods goods :
+                    list1) {
+                System.out.println(goods.getTitle());
+            }*/
+
+
+
         } catch (Exception e) {
             throw e;
         } finally {
