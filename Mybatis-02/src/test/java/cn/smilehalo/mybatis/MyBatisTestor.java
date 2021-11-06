@@ -1,5 +1,6 @@
 package cn.smilehalo.mybatis;
 
+import cn.smilehalo.dto.GoodsDTO;
 import cn.smilehalo.entity.Goods;
 import cn.smilehalo.utils.MyBatisUtils;
 import org.apache.ibatis.io.Resources;
@@ -44,7 +45,7 @@ public class MyBatisTestor {
         }
     }
     @Test
-    public void testMyBatisUtils(){
+    public void testMyBatisUtils()throws Exception{
         SqlSession sqlSession = null;
 
         try {
@@ -58,7 +59,7 @@ public class MyBatisTestor {
         }
     }
     @Test
-    public void testSelectAll(){
+    public void testSelectAll()throws Exception{
         SqlSession sqlSession = null;
         try {
             sqlSession = MyBatisUtils.openSession();
@@ -76,7 +77,7 @@ public class MyBatisTestor {
         }
     }
     @Test
-    public void testSelectById(){
+    public void testSelectById()throws Exception{
         SqlSession sqlSession = null;
         try {
             sqlSession = MyBatisUtils.openSession();
@@ -90,7 +91,7 @@ public class MyBatisTestor {
     }
 
     @Test
-    public void testSelectByPriceRange(){
+    public void testSelectByPriceRange()throws Exception{
         SqlSession sqlSession = null;
         try {
             sqlSession  = MyBatisUtils.openSession();
@@ -133,6 +134,50 @@ public class MyBatisTestor {
             MyBatisUtils.closeSession(sqlSession);
         }
     }
+    @Test
+    public void testSelectGoodsDTO()throws Exception{
+        SqlSession sqlSession = null;
+        try {
+            sqlSession  = MyBatisUtils.openSession();
+            List<GoodsDTO> list = sqlSession.selectList("selectGoodsDTO");
+            for (GoodsDTO g:list){
+                System.out.println(g.getGoods().getTitle());
+            }
+        } catch (Exception e) {
+            throw e;
+        } finally {
+            MyBatisUtils.closeSession(sqlSession);
+        }
+    }
+    @Test
+    public void testInsert()throws Exception{
+        SqlSession sqlSession = null;
+        try {
+            sqlSession  = MyBatisUtils.openSession();
+            Goods goods = new Goods();
+            goods.setTitle("测试商品");
+            goods.setSubTitle("测试子标签");
+            goods.setOriginalCost(200f);
+            goods.setCurrentPrice(100f);
+            goods.setDiscount(0.5f);
+            goods.setIsFreeDelivery(1);
+            goods.setCategoryId(43);
+
+            //insert（）方法返回值代表本次成功插入的记录总数
+            int insert = sqlSession.insert("goods.insert", goods);
+            //提交事物数据 commit();
+            sqlSession.commit();
+            System.out.println(goods.getGoodsId());
+        } catch (Exception e) {
+            if (sqlSession != null) {
+                sqlSession.rollback();//回滚事务
+            }
+            throw e;
+        } finally {
+            MyBatisUtils.closeSession(sqlSession);
+        }
+    }
+
 
 
 }
