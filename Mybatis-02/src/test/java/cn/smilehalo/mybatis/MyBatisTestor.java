@@ -178,6 +178,51 @@ public class MyBatisTestor {
         }
     }
 
+    //  更新操作   (无法完成)
+    @Test
+    public void testUpdate() throws Exception{
+        SqlSession sqlSession = null;
+        try {
+            sqlSession  = MyBatisUtils.openSession();
+            //通过selectById获取id为739的一个数据 并实例为goods对象
+            Goods goods = sqlSession.selectOne("goods.selectById", 1603);
+//            System.out.println(goods.getCurrentPrice());
+            //为此goods对象修改一条Title数据
+            goods.setTitle("111");
+            //利用定义的updata语句，向数据库传递goods对象  并更新数据库
+            int num = sqlSession.update("goods.update", goods);
+            //输出num 即成功更新的条数
+            System.out.println(num);
+            sqlSession.commit();
+        } catch (Exception e) {
+            if (sqlSession != null) {
+                sqlSession.rollback();//回滚事务
+            }
+            throw e;
+        } finally {
+            MyBatisUtils.closeSession(sqlSession);
+        }
+    }
+    //删除
+    @Test
+    public void testDelete() throws Exception{
+        SqlSession sqlSession = null;
+        try {
+            sqlSession  = MyBatisUtils.openSession();
+            //通过selectById获取id为739的一个数据 并实例为goods对象
+            int num = sqlSession.delete("goods.delete", 739);
+            System.out.println(num);
+            sqlSession.commit();
+        } catch (Exception e) {
+            if (sqlSession != null) {
+                sqlSession.rollback();//回滚事务
+            }
+            throw e;
+        } finally {
+            MyBatisUtils.closeSession(sqlSession);
+        }
+    }
+
 
 
 }

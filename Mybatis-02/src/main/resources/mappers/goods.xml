@@ -54,5 +54,23 @@
     </selectKey>
   </insert>
 
+  <update id="update" parameterType="cn.smilehalo.entity.Goods">
+    UPDATE t_goods
+    SET
+        title = #{title},
+        sub_title = #{subTitle},
+        original_cost = #{originalCost},
+        current_price = #{currentPrice},
+        discount = #{discount},
+        is_free_delivery = #{isFreeDelivery},
+        category_id = #{categoryId}
+    WHERE
+        goods_id = #{goodsId};
+  </update>
+
+  <delete id="delete" parameterType="Integer">
+        delete from t_goods where goods_id = #{value}
+  </delete>
+
 
 </mapper>
