@@ -223,6 +223,25 @@ public class MyBatisTestor {
         }
     }
 
-
+    @Test
+    public void testDynamicSql() throws Exception{
+        SqlSession sqlSession = null;
+        try {
+            sqlSession  = MyBatisUtils.openSession();
+            //通过selectById获取id为739的一个数据 并实例为goods对象
+            Map param = new HashMap();
+            param.put("categryId",44);
+            param.put("currentPrice",500);
+            List<Goods> list = sqlSession.selectList("goods.dynamicSQL", param);
+            for (Goods g :
+                    list) {
+                System.out.println(g.getTitle()+":"+g.getCategoryId()+":"+g.getCurrentPrice());
+            }
+        } catch (Exception e) {
+            throw e;
+        } finally {
+            MyBatisUtils.closeSession(sqlSession);
+        }
+    }
 
 }
