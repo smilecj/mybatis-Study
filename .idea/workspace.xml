@@ -25,12 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6369797c-3b20-4b53-acbb-d9e6a53b97a8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mybatis-02/src/main/resources/mappers/goods.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-02/src/main/resources/mappers/goods.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mybatis-02/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-02/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mybatis-02/src/test/java/cn/smilehalo/mybatis/MyBatisTestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-02/src/test/java/cn/smilehalo/mybatis/MyBatisTestor.java" afterDir="false" />
-    </list>
+    <list default="true" id="6369797c-3b20-4b53-acbb-d9e6a53b97a8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,23 +89,7 @@
       <command value="mvn idea:module" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MyBatisTestor.testSelectAll">
-    <configuration name="MyBatisTestor.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mybatis-02" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.smilehalo.mybatis.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.smilehalo.mybatis" />
-      <option name="MAIN_CLASS_NAME" value="cn.smilehalo.mybatis.MyBatisTestor" />
-      <option name="METHOD_NAME" value="testDelete" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MyBatisTestor.testUpdate">
     <configuration name="MyBatisTestor.testDynamicSql" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mybatis-02" />
       <extension name="coverage">
@@ -175,13 +154,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyBatisTestor.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mybatis-02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.smilehalo.mybatis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.smilehalo.mybatis" />
+      <option name="MAIN_CLASS_NAME" value="cn.smilehalo.mybatis.MyBatisTestor" />
+      <option name="METHOD_NAME" value="testUpdate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyBatisTestor.testUpdate" />
         <item itemvalue="JUnit.MyBatisTestor.testSelectAll" />
         <item itemvalue="JUnit.MyBatisTestor.testDynamicSql" />
         <item itemvalue="JUnit.MyBatisTestor.testSelectGoodsMap" />
         <item itemvalue="JUnit.MyBatisTestor.testSelectGoodsDTO" />
-        <item itemvalue="JUnit.MyBatisTestor.testDelete" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +202,7 @@
       <workItem from="1636012244708" duration="3011000" />
       <workItem from="1636083379100" duration="334000" />
       <workItem from="1636183725178" duration="4314000" />
-      <workItem from="1636251315174" duration="9178000" />
+      <workItem from="1636251315174" duration="9985000" />
     </task>
     <task id="LOCAL-00001" summary="更改后">
       <created>1635945352245</created>
@@ -258,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636265783431</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="驼峰命名转换  补充，&#10;mybatis-config.xml下&#10;&lt;configuration&gt;(合适配置文件）下的&#10;设置">
+      <created>1636271706547</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1636271706547</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,7 +295,8 @@
     <MESSAGE value="insert()&#10;主键添加:&lt;selectKey order 中after与before" />
     <MESSAGE value="update&amp;delete" />
     <MESSAGE value="logback.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="logback.xml" />
+    <MESSAGE value="驼峰命名转换  补充，&#10;mybatis-config.xml下&#10;&lt;configuration&gt;(合适配置文件）下的&#10;设置" />
+    <option name="LAST_COMMIT_MESSAGE" value="驼峰命名转换  补充，&#10;mybatis-config.xml下&#10;&lt;configuration&gt;(合适配置文件）下的&#10;设置" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="94" key="#Project_Structure" timestamp="1635826284511">
@@ -319,10 +322,10 @@
     </state>
     <state x="-1155" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1635998295402" />
     <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635826002156" />
-    <state x="-1698" y="76" key="CommitChangelistDialog2" timestamp="1636265782675">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state x="334" y="115" key="CommitChangelistDialog2" timestamp="1636271705816">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1698" y="76" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636265782675" />
+    <state x="334" y="115" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636271705816" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1635744863621">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>

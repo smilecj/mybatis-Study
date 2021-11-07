@@ -14,7 +14,7 @@
         debug: 程序内部用于调式的信息
         trace: 程序运行的跟踪信息
   -->
-    <root level="debug">
+    <root level="error">
       <appender-ref ref="console"/>
     </root>
 </configuration>

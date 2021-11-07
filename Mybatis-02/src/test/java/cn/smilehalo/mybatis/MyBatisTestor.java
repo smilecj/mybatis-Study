@@ -186,7 +186,7 @@ public class MyBatisTestor {
             sqlSession  = MyBatisUtils.openSession();
             //通过selectById获取id为739的一个数据 并实例为goods对象
             Goods goods = sqlSession.selectOne("goods.selectById", 1603);
-//            System.out.println(goods.getCurrentPrice());
+            System.out.println(goods.getCurrentPrice());
             //为此goods对象修改一条Title数据
             goods.setTitle("111");
             //利用定义的updata语句，向数据库传递goods对象  并更新数据库
