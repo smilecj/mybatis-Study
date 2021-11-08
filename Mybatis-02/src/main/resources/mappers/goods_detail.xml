@@ -6,4 +6,14 @@
   <select id="selectByGoodsId" parameterType="Integer" resultType="cn.smilehalo.entity.GoodsDetail">
     select * from t_goods_detail where goods_id = #{value}
   </select>
+
+
+  <resultMap id="rmGoodsDetail" type="cn.smilehalo.entity.GoodsDetail">
+    <id column="gd_id" property="gdId"/>
+    <result column="goods_id" property="goodsId"/>
+    <association property="goods" select="goods.selectById" column="goods_id"/>
+  </resultMap>
+  <select id="selectManyToOne" resultMap="rmGoodsDetail" useCache="true">
+    select * from t_goods_detail limit 0,1
+  </select>
 </mapper>

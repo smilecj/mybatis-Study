@@ -2,6 +2,7 @@ package cn.smilehalo.mybatis;
 
 import cn.smilehalo.dto.GoodsDTO;
 import cn.smilehalo.entity.Goods;
+import cn.smilehalo.entity.GoodsDetail;
 import cn.smilehalo.utils.MyBatisUtils;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -247,6 +248,7 @@ public class MyBatisTestor {
 
 
 //    对象关联查询
+    //一对多
     @Test
     public void testOneToMany() throws Exception{
         SqlSession sqlSession = null;
@@ -255,6 +257,23 @@ public class MyBatisTestor {
             List<Goods> list = sqlSession.selectList("goods.selectOneToMany");
             for (Goods goods:list) {
                 System.out.println(goods.getTitle()+":"+goods.getGoodsDetails().size());
+            }
+        } catch (Exception e) {
+            throw e;
+        } finally {
+            MyBatisUtils.closeSession(sqlSession);
+        }
+    }
+
+    //多对一
+    @Test
+    public void testManyToOne() throws Exception{
+        SqlSession sqlSession = null;
+        try {
+            sqlSession  = MyBatisUtils.openSession();
+            List<GoodsDetail> list = sqlSession.selectList("goodsDetail.selectManyToOne");
+            for (GoodsDetail gd:list) {
+                System.out.println(gd.getGdPicUrl()+":"+gd.getGoods().getTitle());
             }
         } catch (Exception e) {
             throw e;
