@@ -3,7 +3,9 @@
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="goods">
-  <select id="selectAll" resultType="cn.smilehalo.entity.Goods">
+
+  <cache eviction="LRU" flushInterval="600000" size="512" readOnly="true"/>
+  <select id="selectAll" resultType="cn.smilehalo.entity.Goods" useCache="false">
     select*from t_goods order by goods_id desc limit 10;
   </select>
 
@@ -20,9 +22,8 @@
     limit 0,#{limit}
   </select>
 
-
-
-  <select id="selectGoodsMap" resultType="java.util.LinkedHashMap">
+  <!--  查询语句中的（flushCache=“true”）  执行sql 语句之后  自动清除缓存-->
+  <select id="selectGoodsMap" resultType="java.util.LinkedHashMap" flushCache="true">
   select g.* ,c.category_name from t_goods g,t_category c
   where g.category_id = c.category_id;
   </select>
