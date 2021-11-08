@@ -92,7 +92,7 @@
       <command value="mvn idea:module" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MyBatisTestor.testSelectGoodsMap">
+  <component name="RunManager" selected="JUnit.MyBatisTestor.testSelectAll">
     <configuration name="MyBatisTestor.testDynamicSql" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mybatis-02" />
       <extension name="coverage">
@@ -175,10 +175,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyBatisTestor.testSelectAll" />
         <item itemvalue="JUnit.MyBatisTestor.testSelectGoodsMap" />
         <item itemvalue="JUnit.MyBatisTestor.testDynamicSql" />
         <item itemvalue="JUnit.MyBatisTestor.testUpdate" />
-        <item itemvalue="JUnit.MyBatisTestor.testSelectAll" />
         <item itemvalue="JUnit.MyBatisTestor.testSelectGoodsDTO" />
       </list>
     </recent_temporary>
@@ -206,7 +206,7 @@
       <workItem from="1636083379100" duration="334000" />
       <workItem from="1636183725178" duration="4314000" />
       <workItem from="1636251315174" duration="10118000" />
-      <workItem from="1636336237358" duration="1326000" />
+      <workItem from="1636336237358" duration="1964000" />
     </task>
     <task id="LOCAL-00001" summary="更改后">
       <created>1635945352245</created>
@@ -271,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636276918990</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="二级缓存">
+      <created>1636338244606</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1636338244606</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +314,8 @@
     <MESSAGE value="update&amp;delete" />
     <MESSAGE value="logback.xml" />
     <MESSAGE value="驼峰命名转换  补充，&#10;mybatis-config.xml下&#10;&lt;configuration&gt;(合适配置文件）下的&#10;设置" />
-    <option name="LAST_COMMIT_MESSAGE" value="驼峰命名转换  补充，&#10;mybatis-config.xml下&#10;&lt;configuration&gt;(合适配置文件）下的&#10;设置" />
+    <MESSAGE value="二级缓存" />
+    <option name="LAST_COMMIT_MESSAGE" value="二级缓存" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="94" key="#Project_Structure" timestamp="1635826284511">
@@ -333,10 +341,10 @@
     </state>
     <state x="-1155" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1635998295402" />
     <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635826002156" />
-    <state x="334" y="102" key="CommitChangelistDialog2" timestamp="1636276918054">
+    <state x="334" y="102" key="CommitChangelistDialog2" timestamp="1636338243623">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="334" y="102" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636276918054" />
+    <state x="334" y="102" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636338243623" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1635744863621">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
