@@ -1,5 +1,7 @@
 package cn.smilehalo.entity;
 
+import java.util.List;
+
 public class Goods {
     private Integer goodsId; //商品编号
     private String title;       //标题
@@ -9,6 +11,15 @@ public class Goods {
     private Float discount;     //则扣率
     private Integer isFreeDelivery;   //是否包邮，1-包邮，0-不包
     private Integer categoryId;  // 分类编号
+    private List<GoodsDetail> goodsDetails;
+
+    public List<GoodsDetail> getGoodsDetails() {
+        return goodsDetails;
+    }
+
+    public void setGoodsDetails(List<GoodsDetail> goodsDetails) {
+        this.goodsDetails = goodsDetails;
+    }
 
     public Goods() {
     }

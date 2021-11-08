@@ -27,9 +27,11 @@
   select g.* ,c.category_name from t_goods g,t_category c
   where g.category_id = c.category_id;
   </select>
-
+<!--结果映射-->
   <resultMap id="rmGoods" type="cn.smilehalo.dto.GoodsDTO">
+    <!--设置主键字段与属性的映射-->
     <id property="goods.goodsId" column="goods_id"></id>
+    <!--设置非主键字段与属性的映射-->
     <result property="goods.title" column="title"></result>
     <result property="goods.originalCost" column="original_cost"></result>
     <result property="goods.currentPrice" column="current_price"></result>
@@ -83,6 +85,27 @@
         and current_price &lt; #{currentPrice}
       </if>
     </where>
+  </select>
+          <!-- 一对多对象关联查询-->
+<!--
+  resultMap可用与说明一对多或者多对一的映射逻辑
+  id是resultMap属性引用的标志
+  type 指向对应的实体
+  -->
+  <resultMap id="rmGoods1" type="cn.smilehalo.entity.Goods">
+<!--    映射goods对象的主键到goods_id字段-->
+    <id column="goods_id" property="goodsId"></id>
+    <!--
+    collection的含义是，在
+    select * from t_goods limit 0,1; 得到结果后，对所有Good对象遍历得到goods_id字段值，
+    并带入到goodsDetail命名空间的findByGoodsId的SQL中执行查询，
+    将得到的“商品信息”集合赋值给goodsDetails List 对象
+    -->
+    <collection property="goodDetails" select="goodsDetail.selectByGoodsId" column="goods_id"/>
+  </resultMap>
+
+  <select id="selectOneToMany" resultMap="rmGoods1">
+    select * from t_goods limit 0,1;
   </select>
 
 
