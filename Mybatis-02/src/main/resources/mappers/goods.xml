@@ -101,7 +101,7 @@
     并带入到goodsDetail命名空间的findByGoodsId的SQL中执行查询，
     将得到的“商品信息”集合赋值给goodsDetails List 对象
     -->
-    <collection property="goodDetails" select="goodsDetail.selectByGoodsId" column="goods_id"/>
+    <collection property="goodsDetails" select="goodsDetail.selectByGoodsId" column="goods_id"/>
   </resultMap>
 
   <select id="selectOneToMany" resultMap="rmGoods1">

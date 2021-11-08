@@ -23,6 +23,7 @@
   <!--每一个Mapper.XML都需要再Mybatis核心配置文件中注册-->
     <mappers>
       <mapper resource="mappers/goods.xml"/>
+      <mapper resource="mappers/goods_detail.xml"/>
     </mappers>
 
 </configuration>
