@@ -246,6 +246,7 @@ public class MyBatisTestor {
 
 
 
+//    对象关联查询
     @Test
     public void testOneToMany() throws Exception{
         SqlSession sqlSession = null;
