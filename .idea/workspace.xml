@@ -26,11 +26,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6369797c-3b20-4b53-acbb-d9e6a53b97a8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/35023cfd-0e88-4497-a9c7-74d59d3bfd01.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/35023cfd-0e88-4497-a9c7-74d59d3bfd01/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-02/src/main/resources/mappers/goods.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-02/src/main/resources/mappers/goods.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-02/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-02/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis-02/src/test/java/cn/smilehalo/mybatis/MyBatisTestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-02/src/test/java/cn/smilehalo/mybatis/MyBatisTestor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,23 +95,7 @@
       <command value="mvn idea:module" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MyBatisTestor.testManyToOne">
-    <configuration name="MyBatisTestor.testDynamicSql" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mybatis-02" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.smilehalo.mybatis.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.smilehalo.mybatis" />
-      <option name="MAIN_CLASS_NAME" value="cn.smilehalo.mybatis.MyBatisTestor" />
-      <option name="METHOD_NAME" value="testDynamicSql" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MyBatisTestor.testSelectPage">
     <configuration name="MyBatisTestor.testManyToOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mybatis-02" />
       <extension name="coverage">
@@ -161,6 +144,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyBatisTestor.testSelectPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Mybatis-02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.smilehalo.mybatis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.smilehalo.mybatis" />
+      <option name="MAIN_CLASS_NAME" value="cn.smilehalo.mybatis.MyBatisTestor" />
+      <option name="METHOD_NAME" value="testSelectPage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyBatisTestor.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mybatis-02" />
       <extension name="coverage">
@@ -179,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyBatisTestor.testSelectPage" />
         <item itemvalue="JUnit.MyBatisTestor.testManyToOne" />
         <item itemvalue="JUnit.MyBatisTestor.testOneToMany" />
         <item itemvalue="JUnit.MyBatisTestor.testSelectById" />
         <item itemvalue="JUnit.MyBatisTestor.testUpdate" />
-        <item itemvalue="JUnit.MyBatisTestor.testDynamicSql" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +211,7 @@
       <workItem from="1636251315174" duration="10118000" />
       <workItem from="1636336237358" duration="15296000" />
       <workItem from="1636376806677" duration="1796000" />
-      <workItem from="1636466705872" duration="1143000" />
+      <workItem from="1636466705872" duration="2649000" />
     </task>
     <task id="LOCAL-00001" summary="更改后">
       <created>1635945352245</created>
@@ -319,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636377391306</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="pagehelper&amp;jsplarser&#10;注意pom.xml配置前者后   下载资源  后者即可快速导入">
+      <created>1636470890068</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1636470890069</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,7 +365,8 @@
     <MESSAGE value="一对多对象关联查询" />
     <MESSAGE value="修正logback格式" />
     <MESSAGE value="一对多与多对一" />
-    <option name="LAST_COMMIT_MESSAGE" value="一对多与多对一" />
+    <MESSAGE value="pagehelper&amp;jsplarser&#10;注意pom.xml配置前者后   下载资源  后者即可快速导入" />
+    <option name="LAST_COMMIT_MESSAGE" value="pagehelper&amp;jsplarser&#10;注意pom.xml配置前者后   下载资源  后者即可快速导入" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="94" key="#Project_Structure" timestamp="1635826284511">
@@ -385,18 +392,18 @@
     </state>
     <state x="-1155" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636374215917" />
     <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635826002156" />
-    <state x="334" y="0" width="1047" height="1040" key="CommitChangelistDialog2" timestamp="1636377389803">
+    <state x="334" y="0" width="1047" height="1040" key="CommitChangelistDialog2" timestamp="1636470889157">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="334" y="0" width="1047" height="1040" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636377389803" />
+    <state x="334" y="0" width="1047" height="1040" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636470889157" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1635744863621">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1635744863621" />
-    <state x="-1862" y="114" width="1736" height="856" key="DiffContextDialog" timestamp="1636371073718">
+    <state x="-1862" y="114" width="1736" height="856" key="DiffContextDialog" timestamp="1636470886925">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1862" y="114" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636371073718" />
+    <state x="-1862" y="114" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636470886925" />
     <state x="-1180" y="274" key="FileChooserDialogImpl" timestamp="1636376913717">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -490,10 +497,10 @@
     </state>
     <state x="-1304" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636376620393" />
     <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635750859404" />
-    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1636271441664">
+    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1636471600570">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636271441664" />
+    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636471600570" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635750024693" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">

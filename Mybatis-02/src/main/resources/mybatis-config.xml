@@ -8,9 +8,22 @@
   <settings>
     <setting name="mapUnderscoreToCamelCase" value="true"/>
   </settings>
+<!--  启用Pagehelper分页插件-->
+  <plugins>
+    <plugin interceptor="com.github.pagehelper.PageInterceptor">
+      <!--    设置数据库类型-->
+      <property name="helperDialect" value="mysql"/>
+<!--      分页合理化（小于1==》1  大于最后一页==》最后一页-->
+      <property name="reasonable" value="true"/>
+    </plugin>
+  </plugins>
+<!--  设置指向的数据库-->
   <environments default="development">
+<!--    配置环境 不同的环境不同的id-->
     <environment id="development">
+   <!--   采用jdbc方式对数据库事务进行comit/rollback-->
       <transactionManager type="JDBC"/>
+     <!-- 采用连接池方式管理数据库连接-->
       <dataSource type="POOLED">
         <property name="driver" value="com.mysql.jdbc.Driver"/>
         <property name="url" value="jdbc:mysql://localhost:3306/babytun?useUnicode=true&amp;characterEncoding=UTF-8"/>

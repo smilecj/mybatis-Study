@@ -4,6 +4,8 @@ import cn.smilehalo.dto.GoodsDTO;
 import cn.smilehalo.entity.Goods;
 import cn.smilehalo.entity.GoodsDetail;
 import cn.smilehalo.utils.MyBatisUtils;
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -275,6 +277,35 @@ public class MyBatisTestor {
             for (GoodsDetail gd:list) {
                 System.out.println(gd.getGdPicUrl()+":"+gd.getGoods().getTitle());
             }
+        } catch (Exception e) {
+            throw e;
+        } finally {
+            MyBatisUtils.closeSession(sqlSession);
+        }
+    }
+
+    /**
+     * 分页查询
+     * @throws Exception
+     */
+    @Test
+    public void testSelectPage() throws Exception{
+        SqlSession sqlSession = null;
+        try {
+            sqlSession  = MyBatisUtils.openSession();
+            /*starPage方法会自动将下一次查询进行分页*/
+            PageHelper.startPage(2,10);
+            Page<Goods> page = (Page) sqlSession.selectList("goods.selectPage");
+            System.out.println("总页数"+ page.getPages());
+            System.out.println("总记录数"+ page.getTotal());
+            System.out.println("开始行号"+ page.getStartRow());
+            System.out.println("结束行号"+ page.getEndRow());
+            System.out.println("当前页码"+ page.getPageNum());
+            List<Goods> date = page.getResult();
+            for (Goods g :date) {
+                System.out.println(g.getTitle());
+            }
+            System.out.println("");
         } catch (Exception e) {
             throw e;
         } finally {
