@@ -26,12 +26,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6369797c-3b20-4b53-acbb-d9e6a53b97a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Mybatis-02/src/main/java/cn/smilehalo/datasource/C3P0DataSourceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Mybatis-02/src/main/resources/c3p0.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-annotation/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-annotation/src/main/java/cn/smilehalocj/dao/GoodsDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-annotation/src/main/java/cn/smilehalocj/dto/GoodsDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-annotation/src/main/java/cn/smilehalocj/entity/Goods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-annotation/src/main/java/cn/smilehalocj/utils/MyBatisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-annotation/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-annotation/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-annotation/src/test/java/cn/smilehalocj/MyBatisTestor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mybatis-02/src/main/resources/mappers/goods.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-02/src/main/resources/mappers/goods.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mybatis-02/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-02/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mybatis-02/src/test/java/cn/smilehalo/mybatis/MyBatisTestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-02/src/test/java/cn/smilehalo/mybatis/MyBatisTestor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +46,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -74,7 +79,7 @@
     <property name="android.sdk.path" value="$PROJECT_DIR$/../../huanjing/android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.data.extractors.current.id" value="Comma-separated (CSV)_id" />
-    <property name="last_opened_file_path" value="F:/资料/babytun建库脚本.sql" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis-annotation/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -84,13 +89,22 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="cn.smilehalocj" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java\mybatis-Study\mybatis-annotation\src\main\resources" />
+      <recent name="D:\Java\mybatis-Study\Mybatis-01\target\classes\cn\smilehalo\dao" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="entity" />
+      <recent name="dto" />
+      <recent name="utils" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Java\mybatis-Study\Mybatis-01\src\main\resources\cn\smilehalo\dao" />
       <recent name="D:\Java\mybatis-Study\Mybatis-01\src\main\java\cn\smilehalo\dao" />
       <recent name="D:\Java\mybatis-Study\Mybatis-01\src\main\resources" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Java\mybatis-Study\Mybatis-01\target\classes\cn\smilehalo\dao" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -98,7 +112,7 @@
       <command value="mvn idea:module" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MyBatisTestor.testBatchDelete">
+  <component name="RunManager" selected="JUnit.MyBatisTestor.testSelectByPriceRange">
     <configuration name="MyBatisTestor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Mybatis-02" />
       <extension name="coverage">
@@ -162,17 +176,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyBatisTestor.testMyBatisUtils" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Mybatis-02" />
+    <configuration name="MyBatisTestor.testSelectByPriceRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-annotation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.smilehalo.mybatis.*" />
+          <option name="PATTERN" value="cn.smilehalocj.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="cn.smilehalo.mybatis" />
-      <option name="MAIN_CLASS_NAME" value="cn.smilehalo.mybatis.MyBatisTestor" />
-      <option name="METHOD_NAME" value="testMyBatisUtils" />
+      <option name="PACKAGE_NAME" value="cn.smilehalocj" />
+      <option name="MAIN_CLASS_NAME" value="cn.smilehalocj.MyBatisTestor" />
+      <option name="METHOD_NAME" value="testSelectByPriceRange" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -180,11 +194,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyBatisTestor.testSelectByPriceRange" />
         <item itemvalue="JUnit.MyBatisTestor.testBatchDelete" />
         <item itemvalue="JUnit.MyBatisTestor.testBatchInsert" />
         <item itemvalue="JUnit.MyBatisTestor" />
         <item itemvalue="JUnit.MyBatisTestor.testManyToOne" />
-        <item itemvalue="JUnit.MyBatisTestor.testMyBatisUtils" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +229,8 @@
       <workItem from="1636376806677" duration="1796000" />
       <workItem from="1636466705872" duration="2945000" />
       <workItem from="1636511859957" duration="9511000" />
-      <workItem from="1636629197380" duration="3965000" />
+      <workItem from="1636629197380" duration="5194000" />
+      <workItem from="1636688210367" duration="2479000" />
     </task>
     <task id="LOCAL-00001" summary="更改后">
       <created>1635945352245</created>
@@ -343,7 +358,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636517106343</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="批处理   删除与insert">
+      <created>1636635316773</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1636635316773</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,7 +408,8 @@
     <MESSAGE value="pagehelper&amp;jsplarser&#10;注意pom.xml配置前者后   下载资源  后者即可快速导入" />
     <MESSAGE value="分页查询" />
     <MESSAGE value="分页查询 插件pagehelper&#10;&#10;注意 ： mybatis中 单数据库查询语句不用分号结尾&#10;会产生编译错误" />
-    <option name="LAST_COMMIT_MESSAGE" value="分页查询 插件pagehelper&#10;&#10;注意 ： mybatis中 单数据库查询语句不用分号结尾&#10;会产生编译错误" />
+    <MESSAGE value="批处理   删除与insert" />
+    <option name="LAST_COMMIT_MESSAGE" value="批处理   删除与insert" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="94" key="#Project_Structure" timestamp="1635826284511">
@@ -407,19 +430,31 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1240" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1635743375528" />
-    <state x="-1155" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1636374215917">
+    <state x="-1155" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1636688828513">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1155" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636374215917" />
+    <state x="-1155" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636688828513" />
     <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635826002156" />
+    <state x="-1297" y="442" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1636690205525">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1297" y="442" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636690205525" />
+    <state x="-1195" y="386" width="470" height="274" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1636690335129">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1195" y="386" width="470" height="274" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636690335129" />
+    <state x="-1230" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1636688738584">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1230" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636688738584" />
     <state x="-1230" y="266" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1636516905069">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1230" y="266" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636516905069" />
-    <state x="334" y="0" width="1047" height="1040" key="CommitChangelistDialog2" timestamp="1636517105328">
+    <state x="334" y="0" width="1047" height="1040" key="CommitChangelistDialog2" timestamp="1636635315489">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="334" y="0" width="1047" height="1040" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636517105328" />
+    <state x="334" y="0" width="1047" height="1040" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636635315489" />
     <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1635744863621">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -441,45 +476,45 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="663" y="216" key="Github.UntrackedFilesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635774173301" />
-    <state width="1877" height="359" key="GridCell.Tab.0.bottom" timestamp="1636632590567">
+    <state width="1877" height="614" key="GridCell.Tab.0.bottom" timestamp="1636641442132">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="359" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636632590567" />
+    <state width="1877" height="614" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636641442132" />
     <state width="1877" height="359" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1636466781769" />
-    <state width="1877" height="359" key="GridCell.Tab.0.center" timestamp="1636632590567">
+    <state width="1877" height="614" key="GridCell.Tab.0.center" timestamp="1636641442132">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="359" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636632590567" />
+    <state width="1877" height="614" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636641442132" />
     <state width="1877" height="359" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1636466781769" />
-    <state width="1877" height="359" key="GridCell.Tab.0.left" timestamp="1636632590567">
+    <state width="1877" height="614" key="GridCell.Tab.0.left" timestamp="1636641442132">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="359" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636632590567" />
+    <state width="1877" height="614" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636641442132" />
     <state width="1877" height="359" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1636466781769" />
-    <state width="1877" height="359" key="GridCell.Tab.0.right" timestamp="1636632590567">
+    <state width="1877" height="614" key="GridCell.Tab.0.right" timestamp="1636641442132">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="359" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636632590567" />
+    <state width="1877" height="614" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636641442132" />
     <state width="1877" height="359" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1636466781769" />
-    <state width="1877" height="359" key="GridCell.Tab.1.bottom" timestamp="1636632590475">
+    <state width="1877" height="359" key="GridCell.Tab.1.bottom" timestamp="1636641442125">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="359" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636632590475" />
+    <state width="1877" height="359" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636641442125" />
     <state width="1877" height="359" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1636466781769" />
-    <state width="1877" height="359" key="GridCell.Tab.1.center" timestamp="1636632590475">
+    <state width="1877" height="359" key="GridCell.Tab.1.center" timestamp="1636641442125">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="359" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636632590475" />
+    <state width="1877" height="359" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636641442125" />
     <state width="1877" height="359" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1636466781769" />
-    <state width="1877" height="359" key="GridCell.Tab.1.left" timestamp="1636632590475">
+    <state width="1877" height="359" key="GridCell.Tab.1.left" timestamp="1636641442125">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="359" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636632590475" />
+    <state width="1877" height="359" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636641442125" />
     <state width="1877" height="359" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1636466781769" />
-    <state width="1877" height="359" key="GridCell.Tab.1.right" timestamp="1636632590475">
+    <state width="1877" height="359" key="GridCell.Tab.1.right" timestamp="1636641442125">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="359" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636632590475" />
+    <state width="1877" height="359" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636641442125" />
     <state width="1877" height="359" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1636466781769" />
     <state width="220" height="477" key="HiddenNamespacesPopup" timestamp="1636198138848">
       <screen x="-1920" y="0" width="1920" height="1040" />
@@ -497,15 +532,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="254" height="198" key="RunAnythingAction_Filter_Popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635748366867" />
-    <state x="320" y="179" width="998" height="708" key="SettingsEditor" timestamp="1635771694054">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1387" y="197" width="998" height="708" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1635744533032" />
-    <state x="320" y="179" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635771694054" />
-    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2" timestamp="1636551435592">
+    <state x="-1387" y="197" width="998" height="708" key="SettingsEditor" timestamp="1636689976005">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636551435592" />
+    <state x="-1387" y="197" width="998" height="708" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636689976005" />
+    <state x="320" y="179" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635771694054" />
+    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2" timestamp="1636640040924">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636640040924" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1636382159203" />
     <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1636516250219">
       <screen x="-1920" y="0" width="1920" height="1040" />
@@ -515,20 +550,20 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1125" y="202" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636373980290" />
-    <state x="334" y="180" key="new project wizard" timestamp="1635771217678">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1586" y="180" key="new project wizard" timestamp="1636688366153">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1586" y="180" key="new project wizard/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1635739467360" />
+    <state x="-1586" y="180" key="new project wizard/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636688366153" />
     <state x="334" y="180" key="new project wizard/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635771217678" />
     <state x="-1304" y="240" width="672" height="677" key="run.anything.popup" timestamp="1636376620393">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1304" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636376620393" />
     <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635750859404" />
-    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1636533394851">
+    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1636689623570">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636533394851" />
+    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636689623570" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1635750024693" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">

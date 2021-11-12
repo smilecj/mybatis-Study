@@ -11,6 +11,7 @@
   <modules>
     <module>Mybatis-01</module>
     <module>Mybatis-02</module>
+    <module>mybatis-annotation</module>
   </modules>
 
   <!--导入依赖-->
