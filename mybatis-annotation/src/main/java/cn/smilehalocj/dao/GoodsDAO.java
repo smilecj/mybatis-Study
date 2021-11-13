@@ -1,10 +1,8 @@
 package cn.smilehalocj.dao;
 
+import cn.smilehalocj.dto.GoodsDTO;
 import cn.smilehalocj.entity.Goods;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.SelectKey;
+import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
@@ -16,4 +14,14 @@ public interface GoodsDAO {
     //<SelectKey>
     @SelectKey(statement = "select last_insert_id()",before = false, keyProperty = "goodsId",resultType = Integer.class)
     public int insert(Goods goods);
+
+
+    @Select("select * from t_goods")
+//    <resultMap>
+    @Results({
+            @Result(column = "good_id",property = "goodsId",id = true),
+            @Result(column = "title",property = "title"),
+            @Result(column = "current_price",property = "currentPrice")
+    })
+    public List<GoodsDTO> selectAll();
 }

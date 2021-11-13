@@ -1,6 +1,7 @@
 package cn.smilehalocj;
 
 import cn.smilehalocj.dao.GoodsDAO;
+import cn.smilehalocj.dto.GoodsDTO;
 import cn.smilehalocj.entity.Goods;
 import cn.smilehalocj.utils.MyBatisUtils;
 import org.apache.ibatis.session.SqlSession;
@@ -52,6 +53,26 @@ public class MyBatisTestor {
             MyBatisUtils.closeSession(sqlSession);
         }
     }
+
+//selectAll 映射对象
+    @Test
+    public void testSelectAll() throws Exception{
+        SqlSession sqlSession = null;
+        try {
+            sqlSession  = MyBatisUtils.openSession();
+            GoodsDAO goodsDAO = sqlSession.getMapper(GoodsDAO.class);
+            List<GoodsDTO> list = goodsDAO.selectAll();
+            sqlSession.commit();
+        } catch (Exception e) {
+            if (sqlSession != null) {
+                sqlSession.rollback();
+            }
+            throw e;
+        } finally {
+            MyBatisUtils.closeSession(sqlSession);
+        }
+    }
+
 
 
 
